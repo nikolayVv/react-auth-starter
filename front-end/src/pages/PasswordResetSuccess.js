@@ -1,15 +1,15 @@
 import { useHistory } from "react-router";
 
-export const EmailVerificationSuccess = () => {
+export const PasswordResetSuccess = () => {
     const history = useHistory();
 
     return (
         <div className="content-container">
             <h1>Success!</h1>
             <p>
-                Thanks for verifying your email. Now you can use all the app's features.
+                Your password has been reset. Now please login with the new password.
             </p>
-            <button onClick={() => history.push('/')}>Go to home page</button>
+            <button onClick={() => history.push('/login')}>Log In</button>
         </div>
     )
 }
